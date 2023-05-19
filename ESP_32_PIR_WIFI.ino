@@ -1,7 +1,6 @@
 #include <iostream>
 #include <stdlib.h>
 #include <string>
-#include <AsyncTCP.h>
 #ifdef ESP32
 #include <WiFi.h>
 #include <AsyncTCP.h>
@@ -10,9 +9,6 @@
 #include <ESPAsyncTCP.h>
 #endif
 #include <ESPAsyncWebServer.h>
-#include "ArduinoJson.h"
-#include <TinyGPSPlus.h>
-#include <SoftwareSerial.h>
 
 const int wifi_led = 2;//Pin of LED
 
