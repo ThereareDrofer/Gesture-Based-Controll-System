@@ -371,8 +371,8 @@ with mp_holistic.Holistic(min_detection_confidence=0.6, min_tracking_confidence=
 
         if arrays_holistic[1].all() != 0 and (time.time() - time_start) > 15 and len(pose) == 0:
             if model_gesture(arrays_holistic[1]) == 0:
-                if arrays_holistic[mp_holistic.PoseLandmark.RIGHT_ELBOW.value][3] > 0.8 \
-                        and arrays_holistic[mp_holistic.PoseLandmark.RIGHT_WRIST.value][3]:
+                if arrays_holistic[0][mp_holistic.PoseLandmark.RIGHT_ELBOW.value][3] > 0.8 \
+                        and arrays_holistic[0][mp_holistic.PoseLandmark.RIGHT_WRIST.value][3] > 0.8:
                     try:
                         time_start = time.time()
                         pose = arrays_holistic[0]
