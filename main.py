@@ -245,7 +245,7 @@ def turn_off():
 p_time = time.time()
 start_time = time.time()
 rtsp_url = "rtsp://192.168.200.1"
-cap = cv2.VideoCapture(1)
+cap = cv2.VideoCapture(rtsp_url)
 frame_count = 0
 z_final_arr = []
 x_final_arr = []
